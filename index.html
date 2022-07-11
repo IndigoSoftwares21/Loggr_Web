@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="styles/index.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="scripts/index.js"></script>
+    <title>Loggr | File Sorter</title>
+</head>
+
+<body>
+    <div class="mobileNav" id="navmenu">
+        <ul> 
+            <ion-icon id="close" class="close" name="close-outline"></ion-icon>
+            <li><a href="download/Loggr Setup.exe">About</a></li>
+            <li><a href="docs.html">Docs</a></li>
+            <button onclick="alert()">Download</button>
+        </ul>
+    </div>
+    <div class="nav">
+        <span>
+            <img src="images/ico.png" alt="">
+            <p>Loggr</p>
+        </span>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="docs.html">Docs</a></li>
+        </ul>
+        <button onclick="download()">Download</button>
+        <ion-icon class="open" id="open" name="menu-outline"></ion-icon>
+    </div>
+
+    <section class="main">
+        <img class="folder" src="images/loggrfolder.png" alt="">
+        <img class="gear" src="images/gear.png" alt="">
+        <p id="maintext" class="maintext">Locate</p>
+        <button onclick="download()">Download Now <i style="margin-left: 15px; font-size:20px;" class="bi bi-download"></i></button>
+    </section>
+
+    <section id="about" class="presentation">
+        <span class="info">
+
+            <h1>Are you tired of a messy Files?</h1>
+            <h3>Here is a solution</h3>
+            <p><i class="bi bi-caret-right-fill"></i>Locate files easily</p>
+            <p><i class="bi bi-caret-right-fill"></i>Sort files based on file extension</p>
+            <p><i class="bi bi-caret-right-fill"></i>Copy and move files where they belong</p>
+            <p><i class="bi bi-caret-right-fill"></i>Keep your computer organized</p>
+            <p><i class="bi bi-caret-right-fill"></i><a href="#" style="color:#2c2b2b; text-decoration:none;">Download
+                    Loggr now (it's free)</a></p>
+
+        </span>
+        <span class="image">
+
+            <img src="images/My project_dell-xps15-front.png" alt="">
+        </span>
+    </section>
+
+    <footer>
+        <p style="min-width: 33.33%; max-width: fit-content; text-align: left;">Contact: <a
+                href="tel:+2347019430248">Phone</a> || <a href="mailto:sullivanorjiude@gmail.com">Email</a></p>
+        <p style="width: 33.33%; text-align: center;" class="made">Made with ❤ in Nigera</p>
+        <p style="width: 33.33%; text-align: right;">By Precious Orjiude</p>
+    </footer>
+
+    <script>
+        document.getElementById('open').addEventListener('click', menuFunction);
+        document.getElementById('close').addEventListener('click', closemenuFunction);
+
+        function menuFunction() {
+
+            document.getElementById('navmenu').style.display = 'flex';
+
+        }
+        function closemenuFunction() {
+            document.getElementById('navmenu').style.display = 'none';
+
+        }
+
+
+   
+    </script>
+
+
+
+
+</body>
+
+</html>
