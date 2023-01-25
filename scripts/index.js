@@ -21,5 +21,5 @@ function organize()
 }
 
 const download = ()=>{
-    location.href = "download/Setup.exe"
+    location.href = "download/Loggr.exe"
 }
